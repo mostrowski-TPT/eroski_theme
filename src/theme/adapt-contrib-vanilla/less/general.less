@@ -23,3 +23,28 @@
         background-color: darken(white, 2%) !important;
     }
 }
+
+.navbar-logo {
+    background-image: url(course/en/images/eroski_logo.gif);
+    background-size: contain;
+    width: 300px;
+height: 90%;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+@media all and (max-width: 900px) {
+    .navbar-logo {
+        background-size: cover;
+       width: 65px;  
+    }
+}
+@media all and (max-width: 370px) {
+    .navbar-logo {
+       visibility: hidden; 
+    }
+}
